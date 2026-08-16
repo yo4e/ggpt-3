@@ -1,4 +1,4 @@
-import { chance, range } from "./core.js";
+import { range } from "./core.js";
 import { clearState, loadState, saveState } from "./storage.js";
 import { describeWorld, advanceWorld } from "./world.js";
 import { initializeAgent, maybeMonologue, reply } from "./agent.js";
@@ -93,7 +93,7 @@ reset.addEventListener("click", () => {
 });
 
 function scheduleMonologue() {
-  const wait = 55_000 + Math.random() * 45_000;
+  const wait = Math.round(range(state, 35_000, 55_000));
   setTimeout(() => {
     if (!document.hidden && !input.disabled) {
       const line = maybeMonologue(state);
