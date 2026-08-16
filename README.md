@@ -47,7 +47,11 @@ GGPT-3の目的は、事実に正しく答えることでも、高い知能を�
 
 知能がごく小さくても、時間、身体、環境、記憶、忘却、偶然性があれば、存在感は生まれるのか。その最小条件を探る実験です。
 
-将来的には、この仕組みを複数の身体を持つ住民へ移植し、3D空間などで「人間が何もしなくても住民同士で何かが起きる」小さな人工世界へ発展させることも想定しています。
+また、GGPT-3は爺専用のチャット実装ではなく、**ゲーム、メタバース、3D空間、人工世界などへ移植できる Tiny Situated Agent（極小の状況内存在）の基礎実験**として育てます。
+
+将来的には、このAgent部分を [Mintwhirl Island](https://github.com/yo4e/Mintwhirl-Island) のイチゴやドーナツを含む複数の住民へ移植し、「人間が何もしなくても住民同士で何かが起きる」小さな人工世界へ発展させることを想定しています。
+
+長期構想と系譜は [VISION.md](./VISION.md) にまとめています。
 
 ### ローカルで動かす
 
@@ -106,7 +110,11 @@ The world exists outside the language generator. Rain is a state before it becom
 
 The goal is not factual correctness or intelligence. GGPT-3 asks how little language intelligence is needed for continuity, embodiment, memory, forgetting, timing, and environmental causality to create a sense of presence.
 
-The same compact agent loop is intended to be portable to future multi-resident environments, including small 3D artificial worlds in which things can happen between inhabitants even when the human does nothing.
+GGPT-3 is also intended as a portable **Tiny Situated Agent** base for games, metaverse spaces, 3D environments, and artificial worlds, rather than an implementation tied permanently to a single grandpa chat character.
+
+The same compact agent loop can later be transplanted into multiple embodied residents, including inhabitants of [Mintwhirl Island](https://github.com/yo4e/Mintwhirl-Island), so that things can happen between them even when the human does nothing.
+
+See [VISION.md](./VISION.md) for the long-term lineage and project direction.
 
 ### Run locally
 
