@@ -64,9 +64,17 @@ export function reply(state, userText) {
 export function maybeMonologue(state) {
   advanceWorld(state);
   const now = Date.now();
-  if (now - state.runtime.lastUserAt < 25_000) return "";
-  if (now - state.runtime.lastMonologueAt < 70_000) return "";
-  if (!chance(state, .38)) return "";
+  const sinceUser = now - state.runtime.lastUserAt;
+  const sinceMonologue = now - state.runtime.lastMonologueAt;
+
+  // Keep a short conversational pause, but make the resident noticeably present.
+  if (sinceUser < 15_000) return "";
+  if (sinceMonologue < 45_000) return "";
+
+  // Usually speak when checked; after 90 seconds of user silence, almost always speak.
+  const probability = sinceUser >= 90_000 ? .95 : .70;
+  if (!chance(state, probability)) return "";
+
   state.runtime.lastMonologueAt = now;
   return environmentLine(state);
 }
