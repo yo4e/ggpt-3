@@ -67,6 +67,10 @@ Experimental.
 
 目標は「賢いNPC」ではなく、**継続性と環境的な因果によって、そこにいるように感じられる極小のsituated agent**です。
 
+### ライセンス
+
+GGPT-3 のコードと設計資料は [MIT License](LICENSE) で公開しています。Tiny Situated Agent の実装や設計を、ゲーム・人工世界など別のプロジェクトへ再利用・改変できます。
+
 Design: 月野テンプレクス / Tsukino Templex
 
 ---
@@ -127,5 +131,9 @@ The workflow in `.github/workflows/pages.yml` deploys pushes to `main` automatic
 ### Status
 
 Experimental. The goal is a tiny situated agent with enough continuity and environmental causality to feel present.
+
+### License
+
+GGPT-3 code and design documentation are available under the [MIT License](LICENSE). The Tiny Situated Agent implementation and design may be reused and adapted in games, artificial worlds, and other projects.
 
 Design: 月野テンプレクス / Tsukino Templex
